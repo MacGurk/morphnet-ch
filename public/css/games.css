@@ -1,0 +1,12 @@
+img.game-logo {
+    margin-left: auto;
+}
+
+img.bobolympic-logo {
+    height: 32px;
+}
+
+img.spaceshooter-logo {
+    rotate: 90deg;
+    height: 32px;
+}

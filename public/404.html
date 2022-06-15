@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Morphnet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Sarabun', sans-serif;
+            background-color: #555555;
+            overflow: hidden;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(45,45,45,.9);
+            border-radius: .5em;
+            box-shadow: 0 0 .5em rgba(0,0,0,.5);
+            box-sizing: border-box;
+            left: 50%;
+            top: 50%;
+            position: fixed;
+            padding: 10vmin;
+            transform: translate(-50%, -50%);
+        }
+
+        h1 {
+            color: rgb(255,255,255);
+        }
+
+        p {
+            color: rgb(255,255,255);
+            font-size: 2rem;
+            padding: 1rem;
+        }
+
+        .title {
+            display: flex;
+            padding: 1rem;
+            margin-bottom: 5em;
+        }
+
+        .spacer {
+            width: 2vmin;
+        }
+
+        .logo {
+            width: 50px;
+            left: 0;
+            background: transparent;
+        }
+
+        .background {
+            overflow: hidden;
+            background: #203354;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .bg {
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 120px;
+            background: rgba(255,255,255,.2);
+            animation: float-up 25s linear infinite;
+            bottom: -150px;
+            border-radius: 10%;
+        }
+
+        .bg2 {
+            left: 50%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 3s;
+        }
+
+        .bg3 {
+            left: 66%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 3s;
+            animation-duration: 12s;
+        }
+
+        .bg4 {
+            left: 40%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 6s;
+            animation-duration: 48s;
+        }
+
+        .bg5 {
+            left: 80%;
+            width: 40px;
+            height: 40px;
+            animation-delay: 8s;
+            animation-duration: 12s;
+        }
+
+        .bg6 {
+            left: 20%;
+            width: 100px;
+            height: 100px;
+            animation-delay: 3s;
+        }
+
+        .bg7 {
+            left: 90%;
+            width: 80px;
+            height: 80px;
+            animation-delay: -3s;
+            animation-duration: 20s;
+        }
+
+        @keyframes float-up {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+            }
+        }
+    </style>
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sarabun">
+
+</head>
+<body>
+<div class="background">
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="bg bg4"></div>
+    <div class="bg bg5"></div>
+    <div class="bg bg6"></div>
+    <div class="bg bg7"></div>
+</div>
+
+<div class="content">
+    <div class="title">
+        <img class="logo" alt="Morphnet Logo" src="svg/Logo.svg"/>
+        <span class="spacer"></span>
+        <h1>Morphnet</h1>
+    </div>
+    <p>404 - Page not found!</p>
+</div>
+
+
+</body>
+</html>
