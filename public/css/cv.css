@@ -90,6 +90,22 @@ div.key {
     min-width: 100px;
 }
 
+button#languageToggle {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 10em;
+    border-color: whitesmoke;
+    background-image: url("../img/en-de-flag.png");
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+}
+
+button#languageToggle:active {
+    filter: grayscale(100%);
+}
+
 
 @media only screen and (max-width: 600px) {
     .skill {
