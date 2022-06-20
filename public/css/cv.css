@@ -74,9 +74,16 @@ ul > li > ul {
 
 .language {
     display: flex;
+    flex-direction: column;
 }
 
-.language > div:first-child {
+.language > div {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0.2rem;
+}
+
+div.key {
     min-width: 100px;
 }
 
