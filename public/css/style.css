@@ -47,13 +47,17 @@ p {
     margin-bottom: 5em;
 }
 
+.title > a {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .spacer {
     width: 2rem;
 }
 
 .logo {
     width: 50px;
-    left: 0;
     background: transparent;
 }
 
