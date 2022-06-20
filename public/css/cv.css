@@ -39,11 +39,14 @@ ul > li > ul {
 
 .portrait {
     margin-left: auto;
+
 }
 
 .portrait > img {
     width: 3.86cm;
     height: 4.98cm;
+    border-radius: .5em;
+    border: whitesmoke solid 2px;
 }
 
 .subtitle {
