@@ -1,6 +1,4 @@
-let language;
-
-function loadLangQuery() {
+const loadLangQuery = () => {
     let queryParams = new URLSearchParams(window.location.search);
     let lang = queryParams.get('lang');
     if (lang) {
@@ -9,18 +7,18 @@ function loadLangQuery() {
     return('de')
 }
 
-async function getLanguage() {
-    const lang = localStorage.getItem('language')
-    const res = await fetch(`./language/cv/${lang}.json`)
-    const language = await res.json();
-    changeLanguage(language);
+const getLanguage = () => {
+    const lang = localStorage.getItem('language');
+    fetch(`./language/cv/${lang}.json`)
+        .then(res => res.json())
+        .then(json => changeLanguage(json));
 }
 
-function setLanguage(lang) {
+const setLanguage = (lang) => {
     localStorage.setItem('language', lang);
 }
 
-function toggleLanguage() {
+const toggleLanguage = () => {
     const current = localStorage.getItem('language');
     if (current === 'en') {
         setLanguage('de');
@@ -43,7 +41,5 @@ const changeLanguage = (lang) => {
 
 setLanguage(loadLangQuery())
 getLanguage();
-
-
 
 document.getElementById("languageToggle").addEventListener("click", () => toggleLanguage());

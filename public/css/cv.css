@@ -94,11 +94,11 @@ button#languageToggle {
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
-    border-radius: 10em;
+    border-radius: .5em;
     border-color: whitesmoke;
     background-image: url("../img/en-de-flag.png");
-    background-size: 32px 32px;
-    width: 32px;
+    background-size: 64px 32px;
+    width: 64px;
     height: 32px;
 }
 
