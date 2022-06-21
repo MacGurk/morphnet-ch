@@ -26,6 +26,7 @@ const toggleLanguage = () => {
         setLanguage('en');
     }
     getLanguage();
+    setFlagImage();
 }
 
 const changeLanguage = (lang) => {
@@ -39,7 +40,19 @@ const changeLanguage = (lang) => {
     });
 };
 
+const setFlagImage = () => {
+    const currentLang = localStorage.getItem('language');
+    if (currentLang === 'en') {
+        document.getElementById("languageToggle").style.backgroundImage="url('img/german-flag.png')";
+    } else {
+        document.getElementById("languageToggle").style.backgroundImage="url('img/england-flag.png')";
+    }
+
+}
+
 setLanguage(loadLangQuery())
 getLanguage();
+
+setFlagImage();
 
 document.getElementById("languageToggle").addEventListener("click", () => toggleLanguage());

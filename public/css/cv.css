@@ -11,6 +11,10 @@ ul {
     list-style: url('../svg/git-commit.svg');
 }
 
+ul > li {
+    line-height: 2em;
+}
+
 ul > li > ul {
     list-style: url('../svg/git-tag.svg');
 }
@@ -20,10 +24,6 @@ ul > li > ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-}
-
-.content > div.subtitle {
-    margin-top: 3rem;
 }
 
 .personals {
@@ -49,9 +49,10 @@ ul > li > ul {
     border: whitesmoke solid 2px;
 }
 
-.subtitle {
+div.subtitle {
     border-top: 1px solid whitesmoke;
     border-bottom: 1px solid whitesmoke;
+    margin-top: 1rem;
 }
 
 .skills {
@@ -94,12 +95,21 @@ button#languageToggle {
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
-    border-radius: .5em;
-    border-color: whitesmoke;
-    background-image: url("../img/en-de-flag.png");
+    border-radius: 6px;
+    border: 2px solid whitesmoke;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    background-image: url("../img/england-flag.png");
     background-size: 64px 32px;
+    background-position: center;
     width: 64px;
     height: 32px;
+    cursor: pointer;
+}
+
+button#languageToggle:hover {
+    filter: grayscale(33%);
+    transition-duration: 0.5s;
 }
 
 button#languageToggle:active {
