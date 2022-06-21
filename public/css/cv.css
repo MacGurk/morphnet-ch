@@ -114,6 +114,8 @@ button#languageToggle:hover {
 
 button#languageToggle:active {
     filter: grayscale(100%);
+    border-color: grey;
+    transition-duration: 0.1s;
 }
 
 
