@@ -20,11 +20,11 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secret.GHCR_PAT }}
-      - name: SBuild and push
+      - name: Build and push
         uses: docker/build-push-action@v4
         with:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/MacGurk/morphnet-ch:latest
+          tags: ghcr.io/macgurk/morphnet-ch:latest
 
